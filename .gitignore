@@ -4,3 +4,6 @@ docs/
 # Planning prompts
 *.prompt.md
 
+# PDF files
+*.pdf
+

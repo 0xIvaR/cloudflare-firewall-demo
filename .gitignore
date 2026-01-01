@@ -1,2 +1,6 @@
-# Documentation
+# Documentation - private planning docs (local only)
+docs/
+
+# Planning prompts
+*.prompt.md
 

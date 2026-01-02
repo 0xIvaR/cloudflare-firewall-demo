@@ -54,21 +54,32 @@ A cloud-based firewall implementation using **Cloudflare** to protect a live web
 | Step | Description | Status |
 |------|-------------|--------|
 | 1 | Domain & Hosting Setup | ✅ Complete |
-| 2 | Cloudflare Integration | ⏳ Pending |
-| 3 | Firewall Rules | ⏳ Pending |
-| 4 | WAF Configuration | ⏳ Pending |
-| 5 | Monitoring & Analytics | ⏳ Pending |
+| 2 | Cloudflare Integration | ✅ Complete |
+| 3 | Firewall Rules (5 Custom + 1 Rate Limit) | ✅ Complete |
+| 4 | WAF Configuration | ✅ Complete |
+| 5 | Monitoring & Analytics | ✅ Complete |
+| 6 | Final Documentation | ✅ Complete |
 
 ## 🎯 Deliverables
 
 - ✅ Live protected website
-- ⏳ Firewall configuration
-- ⏳ WAF rules implementation  
-- ⏳ Security monitoring dashboard
-- ⏳ OWASP Top 10 protection mapping
+- ✅ 5 Custom firewall rules + 1 Rate limiting rule
+- ✅ WAF with OWASP Core Ruleset
+- ✅ Security monitoring dashboard
+- ✅ OWASP Top 10 protection mapping
+- ✅ 100% attack block rate verified
+
+## 🧪 Test Results
+
+| Attack Type | Result |
+|-------------|--------|
+| SQL Injection | 🛡️ Blocked |
+| XSS Attacks | 🛡️ Blocked |
+| Path Traversal (.env, .git) | 🛡️ Blocked |
+| Malicious Bots (sqlmap) | 🛡️ Blocked |
+| Normal Traffic | ✅ Allowed |
 
 ---
 
 ## Author
 Soham Kundu | Internship Project 2026
-Internship Project - 2026

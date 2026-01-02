@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Protected</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+        }
+        .lock-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .warning {
+            background: rgba(255, 59, 48, 0.2);
+            border: 2px solid #ff3b30;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lock-icon">🔒</div>
+        <h1>Admin Panel</h1>
+        <p class="subtitle">Administrative Access Required</p>
+        
+        <div class="warning">
+            <h3>⚠️ RESTRICTED AREA</h3>
+            <p>This page should be protected by Cloudflare firewall rules.</p>
+        </div>
+        
+        <div class="info">
+            <p><strong>If you can see this page:</strong></p>
+            <p>Cloudflare firewall is either allowing you or this page needs protection configured.</p>
+            <p><strong>Protected by:</strong> Cloudflare WAF</p>
+        </div>
+    </div>
+</body>
+</html>

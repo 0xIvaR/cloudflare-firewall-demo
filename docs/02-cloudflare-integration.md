@@ -17,7 +17,8 @@ This document details the process of integrating the website with Cloudflare's c
 
 ### Original Nameservers (Before)
 ```
-[Original Registrar Nameservers]
+dns1.registrar-servers.com
+dns2.registrar-servers.com
 ```
 
 ### Cloudflare Nameservers (After)
